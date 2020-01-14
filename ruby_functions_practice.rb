@@ -58,7 +58,7 @@ def number_to_full_month_name(month)
     return "December"
   else
     return "No month available"
-end
+  end
 end
 
 def number_to_short_month_name(month)
@@ -89,11 +89,18 @@ def number_to_short_month_name(month)
     return "Dec"
   else
     return "No month available"
+  end
 end
 
 def volume_of_cube(side)
-  return side**3
+  return side ** 3
 end
 
+def volume_of_sphere(radius)
+  volume = 4 * Math::PI * radius**2
+  return volume.to_i()
+end
 
+def fahrenheit_to_celsius(temp)
+  return (temp-32) * 5 / 9
 end
